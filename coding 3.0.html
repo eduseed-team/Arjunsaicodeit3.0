@@ -1,0 +1,74 @@
+ <html>
+    <head>
+        <link rel="stylesheet" href="/static/css 3.0.css">
+        <style>
+            table, th, td{
+                border:1px solid white;
+                border-collapse: collapse;
+                opacity: 0.9;
+            }
+            th, td{
+                background-color: rgb(0, 217, 255); 
+            }
+            table{
+                width: 100%;
+            }
+            label{
+                size: 21px;
+            }
+        </style>
+    </head>
+    <body background="\static\image (3).jpg">
+        <div class="container1">
+        <div class="container2">
+        <label>Welcome {{name}}</label>
+        <br>
+        <label><a href="/logout"><button type="button">Logout</button></a></label>
+        </div>
+        <br>
+        <label>Minimum number of activities.</label>
+        <br>
+        <label>10000 Steps</label>
+        <br>
+        <label>100 Jumping Jacks</label>
+        <br>
+        <label>100 Situps</label>
+        <br>
+        <label>50 Weight pushes</label>
+        <br>
+        <label>10 Hours of sleep</label>
+        <br>
+        <label>Healthy breakfast</label>
+        <br>
+        <label>Healthy lunch</label>
+        <br>
+        <label>Healthy dinner</label>
+        <br>
+        <label>Desert of choice</label>
+        <br>
+        <a href="/add"><button type="button">Add</button></a>
+        </div>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Activity</th>
+                <th># of times the activity has been completed/Food eaten</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                {% for i in books %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.author}}</td>
+                    <td>{{i.date}}</td>
+                    <td><a id="edit" href="edit?id={{i.id}}"><button type="button">Edit</button></a><a id="delete" href="delete?id={{i.id}}"><button type="button">Delete</button></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

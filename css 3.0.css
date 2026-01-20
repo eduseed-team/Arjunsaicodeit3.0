@@ -1,0 +1,25 @@
+.container1{
+    background-color: rgb(67, 127, 211);
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgb(165, 164, 164);
+    border-top: 5px;
+    text-align: center;
+    opacity: 0.8;
+    margin-left: 300px;
+}
+.container2{
+    background-color: rgb(67, 127, 211);
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgb(165, 164, 164);
+    border-top: 5px;
+    text-align: center;
+    opacity: 0.8;
+}
+label{
+    text-align: center;
+}
+input{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+<html>
+    <body background="\static\image (3).jpg">
+        <form action="{{ url_for('add') }}" method="POST">
+            <label>Please enter the activity completed</label><br>
+            <label for="activity">Name of the activity completed:</label>
+            <input type="text" name="activity" id="activity"><br>
+            <label for="activity"># of times the activity has been completed/Food Eaten:</label>
+            <input type="text" name="times" id="times"><br>
+            <label for="activity">Today's Date:</label>
+            <input type="date" name="date" id="date"><br>
+            <input type="submit" value="submit"><br>
+        </form>
+    </body>
+</html>
